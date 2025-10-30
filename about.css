@@ -1,0 +1,58 @@
+/* ------------------------------
+   About Page Styles
+------------------------------ */
+
+.about-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fffafc;
+}
+
+.about-container h1 {
+  color: #b25d8d;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.about-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  color: #b25d8d;
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  color: #555;
+  font-size: 0.95rem;
+}

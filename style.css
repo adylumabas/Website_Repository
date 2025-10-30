@@ -1,0 +1,260 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Navigation Bar Styles
+------------------------------ */
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #b25d8d; /* brand color */
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #b25d8d;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ------------------------------
+   Footer Styles
+------------------------------ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f8f8;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ------------------------------
+   Universal Header with Profile Photo
+------------------------------ */
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Profile Photo */
+.profile-photo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.profile-photo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b25d8d;
+  box-shadow: 0 0 6px rgba(178, 93, 141, 0.3);
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #b25d8d;
+  letter-spacing: 0.5px;
+  flex-grow: 1;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #b25d8d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* ------------------------------
+   Profile Photo in Header
+------------------------------ */
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.profile-photo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b25d8d;
+  box-shadow: 0 0 6px rgba(178, 93, 141, 0.3);
+}
+/* ------------------------------
+   Navigation Bar with Profile on Right
+------------------------------ */
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* Align logo, links, and profile photo */
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #b25d8d;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #b25d8d;
+}
+
+/* Profile photo on right side */
+.profile-photo {
+  margin-left: 1.5rem;
+}
+
+.profile-photo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b25d8d;
+  box-shadow: 0 0 6px rgba(178, 93, 141, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    margin-left: 0;
+  }
+}
+

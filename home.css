@@ -1,0 +1,155 @@
+/* ------------------------------
+   Home Page Styles
+------------------------------ */
+.hero {
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background: #b25d8d;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #994d79;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #b25d8d;
+}
+
+.about-preview {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fffafc;
+}
+
+.about-preview h2 {
+  color: #b25d8d;
+  margin-bottom: 1rem;
+}
+
+.about-preview p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Featured Section */
+.featured {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.featured h2 {
+  color: #b25d8d;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start; /* ensures all cards start from top */
+}
+
+/* Card */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* prevents image overlap */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside Card */
+.product-card img {
+  width: 100%;         /* fills card width */
+  height: auto;        /* keeps aspect ratio */
+  object-fit: contain; /* shows full image without cropping */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05); /* subtle hover zoom */
+}
+
+/* Card Title */
+.product-card h3 {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-top: auto; /* pushes title to bottom if needed */
+}
+
+.cta{
+  background:linear-gradient(135deg,#f7d9e3,#d6f0ff);
+  text-align:center;
+  padding:4rem 2rem;
+}
+
+.cta h2{
+  color:#b25d8d;
+  margin-bottom:1rem;
+}
+
+
+.cta p {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
